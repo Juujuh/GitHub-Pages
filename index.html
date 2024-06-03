@@ -18,6 +18,17 @@
                     <br>
                 </div>
                 <div>
+                    <label for="id_data">Data de Nascimento:
+                        <input type="date" name="data" id="id_data">
+                        <!--
+                            <input type="datetime-local" value="2007-05-03">
+                            <input type="time">
+                            <input type="week">
+                            <input type="month">
+                        -->
+                    </label>
+                </div>
+                <div>
                     <p>Vagas disponíveis</p>
                     <label for="id_dev">Dev Front-end JR
                         <input type="radio" name="radio" value="Dev Front-end JR" id="id_vaga">
@@ -128,6 +139,7 @@
             
             alert(`
             Nome: ${form.nome.value}
+            Data: ${form.data.value}
             Vaga: ${form.id_vaga.value}
             Habilidades: ${id_habilidades}
             Cursos: ${form.id_textarea.value}
